@@ -37,7 +37,7 @@ module.exports = {
   ].filter(Boolean),
   entry: { index: path.resolve(__dirname, './src/index.js') },
   output: {
-    //path: path.resolve(__dirname, "build")
+    path: path.resolve(__dirname, isDevelopment ? '.dev' : 'build'),
   },
   resolve: {
     extensions: ['.js', '.jsx'],
