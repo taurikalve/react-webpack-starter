@@ -6,10 +6,16 @@ React Webpack development platform. Similar to CRA, but more lightweight and cus
 
 ## Notes
 
-Currently includes both CSS and SCSS module importing - remove as necessary.
+### Style import
+
+Supports both **sass** and **css** imports. Also includes <a href="https://github.com/csstools/postcss-normalize" target="_blank">normalize/sanitize css</a>
+
+### Static file serving
+
+Files in `public` folder will be served as `/static/` in browser.
 
 ---
 
 ## Issues
 
-- `browserlist.development` breaks **react-refresh** with current version of **webpack-dev-server**. [See thread](https://github.com/pmmmwh/react-refresh-webpack-plugin/issues/235). Add later to **package.json**: `"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]`
+- `browserlist.development` breaks **react-refresh** with current version of **webpack-dev-server**. Add later: `"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]`
