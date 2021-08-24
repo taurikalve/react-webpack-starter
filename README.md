@@ -6,6 +6,10 @@ React Webpack development platform. Similar to CRA, but more lightweight and cus
 
 ## Notes
 
+### Proxy
+
+By default the server runs on **8888** and proxies `/api` to `http://localhost:8080/api`. See (DevServer docs)[https://webpack.js.org/configuration/dev-server/#devserverproxy].
+
 ### Style import
 
 Supports both **sass** and **css** imports. Also includes <a href="https://github.com/csstools/postcss-normalize" target="_blank">normalize/sanitize css</a>
