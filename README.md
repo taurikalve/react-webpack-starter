@@ -24,7 +24,7 @@ Supports absolute imports, e.g. `import Test from '@components/Test'`. See [Webp
 
 ### SVG import as React Components
 
-Supports SVG import as React Components like `import MySvg from 'assets/mysvg.svg` then use as `<MySvg />`.
+Supports SVG import as React Components like `import MySvg from 'assets/mysvg.svg'` then use as `<MySvg />`.
 
 ---
 
