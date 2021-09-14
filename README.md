@@ -1,6 +1,6 @@
 # React Webpack
 
-React Webpack development platform. Similar to CRA, but more lightweight and customizable. Includes **react-refresh** for a better development experience.
+React Webpack development platform. Similar to CRA, but more lightweight and customizable. Includes **react-refresh** for a better development experience. Tested with Node 16+.
 
 ---
 
