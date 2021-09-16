@@ -6,6 +6,16 @@ React Webpack development platform. Similar to CRA, but more lightweight and cus
 
 ## Notes
 
+### Commands
+
+Currently set up for Bash. Use example: `npm run dev`.
+
+- `dev` - Run development server
+- `build` - Build production version in `/build` folder
+- `build:analyze` - Builds production version and runs build analyzer on `http://localhost:8888`
+- `dev-build` - Creates a development build in `/.dev` folder
+- `serve` - Serve production version
+
 ### Proxy
 
 By default the server runs on **8888** and proxies `/api` to `http://localhost:8080/api`. See [Webpack devServer.proxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
