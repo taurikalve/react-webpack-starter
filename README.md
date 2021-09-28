@@ -39,9 +39,3 @@ Supports absolute imports, e.g. `import Test from '@components/Test'`. See [Webp
 ### SVG import as React Components
 
 Supports SVG import as React Components like `import MySvg from 'assets/mysvg.svg'` then use as `<MySvg />`.
-
----
-
-## Issues
-
-- `browserlist.development` breaks **react-refresh** with current version of **webpack-dev-server**. Add later: `"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]`
