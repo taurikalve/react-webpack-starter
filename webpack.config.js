@@ -98,7 +98,7 @@ module.exports = {
       },
     },
   },
-  entry: { index: path.resolve(__dirname, './src/index.js') },
+  entry: { index: path.resolve(__dirname, 'src/index.js') },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, isDevelopment ? '.dev' : 'build'),
