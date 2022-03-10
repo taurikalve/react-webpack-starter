@@ -112,10 +112,17 @@ module.exports = {
     },
   },
   devServer: {
-    hot: isDevelopment && true,
+    hot: isDevelopment,
     port: 8888,
     proxy: {
-      '/api': 'http://localhost:8080',
+      '/api': {
+        target: 'ws://localhost:8080',
+      },
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        ws: true,
+      },
     },
     historyApiFallback: true,
   },
