@@ -50,9 +50,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            // ... other options
             plugins: [
-              // ... other plugins
               isDevelopment && require.resolve('react-refresh/babel'),
             ].filter(Boolean),
           },
@@ -98,7 +96,7 @@ module.exports = {
       },
     },
   },
-  entry: { index: path.resolve(__dirname, 'src/index.js') },
+  entry: { index: path.resolve(__dirname, 'src', 'index.js') },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, isDevelopment ? '.dev' : 'build'),
@@ -107,8 +105,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@components': path.resolve(__dirname, 'src', 'components'),
+      '@styles': path.resolve(__dirname, 'src', 'styles'),
     },
   },
   devServer: {
